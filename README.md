@@ -2,6 +2,9 @@
 Some useful notes
 
 ## To develope:
+The actual API docs:
+https://www.yelp.com/developers/documentation/v3/get_started
+
 
 Some other peoples sample Yelp repo:
 https://github.com/MontealegreLuis/yelpv3-java-client
@@ -21,3 +24,7 @@ http://restarantfinder-env.zaeazpzspm.us-west-2.elasticbeanstalk.com/greeting?na
 
 Deployed:
 https://aws.amazon.com/blogs/devops/deploying-a-spring-boot-application-on-aws-using-aws-elastic-beanstalk/
+
+
+#Jackson
+https://www.baeldung.com/jackson-field-serializable-deserializable-or-not
