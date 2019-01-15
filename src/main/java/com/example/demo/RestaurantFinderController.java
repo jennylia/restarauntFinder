@@ -16,12 +16,12 @@ import java.net.URISyntaxException;
 public class RestaurantFinderController {
 
     @GetMapping("listOptions")
-    public String greeting(@RequestParam(name = "location", required = false, defaultValue = "Seattle") String name, Model model) throws IOException, URISyntaxException {
-        model.addAttribute("location", name);
+    public String greeting(@RequestParam(name = "location", required = false, defaultValue = "Seattle") String location, Model model) throws IOException, URISyntaxException {
+        model.addAttribute("location", location);
 
         // Find me the return val:
         YelpClient yelpClient = new YelpClient();
-        String yelpClientData = yelpClient.getData();
+        String yelpClientData = yelpClient.getData(location);
 
         // TODO: change back to controller once ready to bind to views
         return yelpClientData;
